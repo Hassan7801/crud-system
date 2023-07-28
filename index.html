@@ -1,0 +1,61 @@
+
+  </html>
+  
+  <html>
+    <head>
+       
+            
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+     
+    </head>
+        <body>
+          
+            
+          <div class="w-75 mx-auto py-4">
+            <h2 class="py-3"> Product Managment System</h2> 
+            <label for="productNameProduct">Product Name :</label>
+            <input type="text" class="form-control mb-2" id="productNameProduct">
+
+            <label for="productPriceProduct">Product Price :</label>
+            <input type="text" class="form-control mb-2" id="productPriceProduct">
+
+            <label for="productCategoryProduct">Product Category :</label>
+            <input type="text" class="form-control mb-2" id="productCategoryProduct">
+
+            <label for="productDescProduct">Product Desc :</label>
+            <textarea type="text" class="form-control mb-2" id="productDescProduct"></textarea>
+
+            <button onclick="addProduct();" class="btn btn-outline-info mb-5">Add Product</button>
+            
+              <input oninput="searchProduct(this.value);" type="text" class="form-control w-75 mx-auto ">
+           
+            
+            <div class="w-75 mx-auto py-5">
+                <table class="table">
+                    <thead>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Desc</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+
+                </table>
+            </div>
+
+          </div>
+
+
+        <script src="script.js"></script>
+        </body>
+             
+  
+
+
+
+</html>
